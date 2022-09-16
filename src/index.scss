@@ -1,0 +1,21 @@
+body {
+  --primary-color: #5f9e9f;
+  --secondary-color: #9dbaba;
+  --font-color: #d8e5e5;
+  --bg-color: #222222;
+  --heading-color: #7e9998;
+
+  &.light {
+    --primary-color: #5f9e9f;
+    --secondary-color: #9dbaba;
+    --font-color: #3e4450;
+    --bg-color: #e7e7e7;
+    --heading-color: #7e9998;
+  }
+
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  overflow: hidden;
+}
