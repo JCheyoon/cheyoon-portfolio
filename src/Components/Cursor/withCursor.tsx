@@ -9,6 +9,11 @@ export function withCursor<T>(
       onMouseEnter={increaseCursor}
       onMouseLeave={decreaseCursor}
       {...props}
+      onClick={() => {
+        // @ts-ignore
+        props.onClick && props.onClick();
+        decreaseCursor();
+      }}
     />
   );
 }
