@@ -6,10 +6,11 @@ import Portfolio from "./Routes/Portfolio";
 import Contact from "./Routes/Contact";
 import Navigation from "./Components/Navigation/Navigation.component";
 import Cursor from "./Components/Cursor/Cursor.component";
+import { ModalProvider } from "./Context/modal-context";
 
 function App() {
   return (
-    <>
+    <ModalProvider>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Cursor />
-    </>
+    </ModalProvider>
   );
 }
 
