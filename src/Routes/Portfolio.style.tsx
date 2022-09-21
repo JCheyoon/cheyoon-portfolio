@@ -4,6 +4,19 @@ export const PortfolioContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 800px;
+  height: calc(100vh - 105px);
+  -webkit-overflow-scrolling: touch !important;
+  margin-bottom: 10px;
+  align-items: center;
+
+  @media (min-width: 520px) {
+    align-items: normal;
+    margin-top: 120px;
+  }
+  @media (min-width: 800px) {
+    padding: 20px 0;
+    margin-top: 0;
+  }
 
   h1 {
     font-size: 30px;
@@ -11,11 +24,6 @@ export const PortfolioContainer = styled.div`
     border-bottom: 1px solid var(--font-color-light);
     padding: 20px 10px;
     margin-top: 30px;
-
-    @media (min-width: 800px) {
-      padding: 20px 0;
-      margin-top: 0;
-    }
   }
 `;
 

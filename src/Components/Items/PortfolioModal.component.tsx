@@ -1,22 +1,25 @@
 import {
   BackDropContainer,
+  ModalBtn,
   ModalContainer,
   ModalContent,
 } from "./PortfolioModal.style";
 import { useContext } from "react";
 import { ModalContext } from "../../Context/modal-context";
+import { withCursor } from "../../Components/Cursor/withCursor";
+
+const ButtonWithCursor = withCursor(ModalBtn);
 
 const PortfolioModal = () => {
-  const { title, hideModal, content } = useContext(ModalContext);
+  const { hideModal, content } = useContext(ModalContext);
   return (
     <ModalContainer>
       <BackDropContainer />
-      <ModalContent>
-        <h1>{title}</h1>
+      <ModalContent className="modal-content">
         {content}
-        <button onClick={hideModal}>
-          <i className="material-icons">close</i>
-        </button>
+        <ButtonWithCursor onClick={hideModal}>
+          <span className="material-symbols-outlined">close</span>
+        </ButtonWithCursor>
       </ModalContent>
     </ModalContainer>
   );

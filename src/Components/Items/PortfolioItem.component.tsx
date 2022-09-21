@@ -1,19 +1,13 @@
 import { Description, ItemWrapper } from "./PortfolioItem.stlye";
 import { Button } from "../../Page.style";
 import { withCursor } from "../../Components/Cursor/withCursor";
-import { ItemType } from "../Texts/PortfolioData";
+import { ItemType } from "./PortfolioData";
 import React, { useContext } from "react";
 import { ModalContext } from "../../Context/modal-context";
 
 const ButtonWithCursor = withCursor(Button);
 
-const PortfolioItem = ({
-  imgUrl,
-  title,
-  projectUrl,
-  description,
-  element,
-}: ItemType) => {
+const PortfolioItem = ({ imgUrl, title, description, element }: ItemType) => {
   const { showModal } = useContext(ModalContext);
 
   return (

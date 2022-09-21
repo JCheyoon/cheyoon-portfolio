@@ -8,7 +8,11 @@ export const NavContainer = styled.div`
   width: 100%;
   color: var(--font-color);
   height: 55px;
-  margin-top: 25px;
+  padding-top: 25px;
+  background-color: var(--bg-color);
+  top: 0;
+  position: fixed;
+  z-index: 10;
 `;
 export const Navbar = styled.div`
   width: 900px;

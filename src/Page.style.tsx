@@ -3,16 +3,10 @@ import styled from "styled-components";
 export const PageContainer = styled.div`
   display: flex;
   justify-content: center;
-  height: calc(100vh - 80px);
-  align-items: flex-start;
-  margin-top: 20px;
-  overflow-y: auto;
+  overflow: auto;
+  padding-top: 105px;
+  -webkit-overflow-scrolling: touch;
   animation: move 200ms ease;
-
-  @media (min-width: 800px) {
-    align-items: center;
-    margin-top: 0;
-  }
 
   @keyframes move {
     0% {
@@ -23,11 +17,6 @@ export const PageContainer = styled.div`
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  @media (min-width: 800px) {
-    align-items: center;
-    margin-top: 0;
   }
 `;
 

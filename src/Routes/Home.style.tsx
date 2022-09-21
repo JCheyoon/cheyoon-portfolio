@@ -2,18 +2,21 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  height: calc(100vh - 105px);
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: 800px) {
-    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content: normal;
+    margin-top: 0;
   }
 `;
 
 export const PicContainer = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -22,16 +25,17 @@ export const PicContainer = styled.div`
   margin-bottom: 20px;
 
   @media (min-width: 800px) {
+    width: 300px;
+    height: 300px;
     margin-bottom: 0;
   }
 `;
 export const TextContainer = styled.div`
-  padding-left: 0;
-  width: 300px;
+  padding-left: 30px;
+  width: 280px;
 
-  @media (min-width: 520px) {
+  @media (min-width: 800px) {
     padding-left: 100px;
-
     width: 400px;
   }
 

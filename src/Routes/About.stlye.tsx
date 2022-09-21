@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
+export const AboutBox = styled.div`
+  height: calc(100vh - 105px);
+  display: flex;
+  align-items: center;
+`;
 export const AboutContainer = styled.div`
   display: flex;
+  margin-top: 550px;
   flex-direction: column;
   background-color: var(--bg-light-color);
   border-radius: 10px;
   align-items: center;
-  margin-bottom: 40px;
 
   @media (min-width: 800px) {
+    margin-top: 0;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 0;
   }
 `;
 export const Pic = styled.div`

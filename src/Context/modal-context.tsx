@@ -1,12 +1,10 @@
 import React, { createContext, useState } from "react";
 
 export type DefaultValue = {
-  title: string;
   showModal: (content: JSX.Element) => void;
   hideModal: () => void;
   show: boolean;
   content: JSX.Element | undefined;
-  // setContent: React.SetStateAction<React.Component | undefined>;
 };
 
 type ProviderProps = {
@@ -28,7 +26,6 @@ export const ModalProvider = ({ children }: ProviderProps) => {
   };
 
   const modalValue: DefaultValue = {
-    title: "Using React Context in a Typescript App",
     showModal: openModalHandler,
     hideModal: closeModalHandler,
     show,

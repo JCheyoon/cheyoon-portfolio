@@ -7,6 +7,7 @@ body {
   --bg-light-color: #3f3f3f;
   --bg-transparent: rgba(62, 63, 69, 0.85);
   --item-color: #333333;
+  --both-white: #d8e5e5;
 
   &.light {
     --primary-color: #5f9e9f;
@@ -17,11 +18,12 @@ body {
     --bg-light-color: #efefef;
     --bg-transparent: rgba(242, 242, 242, 0.75);
     --item-color: #cbd3d4;
+    --both-white: #d8e5e5;
   }
-
   margin: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
   color: var(--font-color);
   overflow: hidden;
+  box-sizing: border-box;
 }
