@@ -4,13 +4,31 @@ export type MySkills = {
 };
 
 export const skillList: MySkills[] = [
-  { tech: "Html", description: "I love it" },
-  { tech: "Css", description: "I love it" },
-  { tech: "Scss", description: "I love it" },
-  { tech: "Javascript", description: "I love it" },
-  { tech: "TypeScript", description: "I love it" },
-  { tech: "React", description: "I love it" },
+  {
+    tech: "Html",
+    description: "I am comfortable with using Html",
+  },
+  {
+    tech: "Css",
+    description: "I'd like to become css magician",
+  },
+  {
+    tech: "Scss",
+    description: "I love it",
+  },
+  {
+    tech: "Javascript",
+    description: "I'm trying not to forget VanillaJS",
+  },
+  {
+    tech: "TypeScript",
+    description: "I just started to learn!",
+  },
+  { tech: "React", description: "I'd like to dive deeper into React" },
 ];
 export const wantToLearn: MySkills[] = [
-  { tech: "Three.js", description: "I love it" },
+  {
+    tech: "Three.js",
+    description: " I am curios how Three.js is ",
+  },
 ];

@@ -9,7 +9,9 @@ const SkillTexts = ({ lists }: { lists: MySkills[] }) => {
           <div>
             <span className="tech">{list.tech}</span>
           </div>
-          <span>{list.description}</span>
+          <div className="des">
+            <span>{list.description}</span>
+          </div>
         </li>
       ))}
     </SkillTextsContainer>

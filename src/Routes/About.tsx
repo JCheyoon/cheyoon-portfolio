@@ -23,7 +23,7 @@ const ButtonWithCursor = withCursor(Button);
 
 const About = () => {
   const onDownload = () => {
-    console.log("hi");
+    window.open("/JungCheyoon-CV.pdf", "_blank");
   };
 
   return (

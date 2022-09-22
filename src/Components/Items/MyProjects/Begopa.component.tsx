@@ -1,32 +1,44 @@
 import ProjectsLink from "./Style/ProjectsLink.component";
 import ProjectFooter from "./Style/ProjectFooter.component";
 import ProjectHeader from "./Style/ProjectHeader.component";
-import { TestBox } from "./Style/ProjectStyle";
+import { ProjectBox, ProjectUl } from "./Style/ProjectStyle";
 
 const Begopa = () => {
   return (
-    <TestBox>
+    <ProjectBox>
       <ProjectHeader
         title="Begopa"
         tags={["React", "Scss"]}
         img="../project1.png"
       />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi
-        consectetur cum deleniti dicta dignissimos distinctio dolor dolores
-        ducimus earum eos error esse eum explicabo harum impedit in incidunt
-        ipsam ipsum itaque libero maxime molestias nihil non officia omnis
-        perspiciatis possimus qui, repudiandae sit tempora ullam voluptas
-        voluptatum? Eius, natus.
+        For my very first React project I choose to create a recipe website for
+        myself. My goal was practice Real world API communication.
       </p>
       <ProjectsLink siteLink="https://begopa.jcheyoon.com/" />
       <h3>Features:</h3>
-      <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-      </ul>
+      <ProjectUl>
+        <li>
+          Authentication state in frontend -
+          <span>&nbsp;Visitors can sign up and login, logout</span>
+        </li>
+        <li>
+          Communicating with Rest API -
+          <span>
+            &nbsp;Visitors can submit their recipes which is editable &
+            deletable, also can decide public or private.
+          </span>
+        </li>
+        <li>
+          Tags filtering & Searching -
+          <span>
+            &nbsp;Visitors can filter recipes by tag that named from them, can
+            search recipe by name
+          </span>
+        </li>
+      </ProjectUl>
       <ProjectFooter siteLink="https://github.com/JCheyoon/begopa" />
-    </TestBox>
+    </ProjectBox>
   );
 };
 

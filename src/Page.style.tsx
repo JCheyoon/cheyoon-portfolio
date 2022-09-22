@@ -5,8 +5,10 @@ export const PageContainer = styled.div`
   justify-content: center;
   overflow: auto;
   padding-top: 105px;
-  -webkit-overflow-scrolling: touch;
   animation: move 200ms ease;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @keyframes move {
     0% {

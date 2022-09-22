@@ -6,7 +6,11 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: -40px;
 
+  @media (min-width: 520px) {
+    margin-bottom: 0;
+  }
   @media (min-width: 800px) {
     flex-direction: row;
     justify-content: normal;

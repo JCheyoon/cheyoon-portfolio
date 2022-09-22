@@ -13,7 +13,7 @@ export const MyCursor = styled.div`
   transform: translate(-50%, -50%);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 11;
+  z-index: 10;
 
   &.hovered {
     margin-left: -10px;

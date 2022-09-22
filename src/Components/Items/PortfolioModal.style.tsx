@@ -22,7 +22,6 @@ export const ModalContent = styled.div`
   padding: 3rem;
   overflow: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   height: 100vh;
   z-index: 11;
   cursor: move;

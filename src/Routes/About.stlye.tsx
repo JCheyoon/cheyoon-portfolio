@@ -4,10 +4,14 @@ export const AboutBox = styled.div`
   height: calc(100vh - 105px);
   display: flex;
   align-items: center;
+  margin-bottom: -60px;
+  @media (min-width: 520px) {
+    margin-bottom: 0;
+  }
 `;
 export const AboutContainer = styled.div`
   display: flex;
-  margin-top: 550px;
+  margin-top: 700px;
   flex-direction: column;
   background-color: var(--bg-light-color);
   border-radius: 10px;

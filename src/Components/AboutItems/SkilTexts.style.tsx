@@ -8,11 +8,24 @@ export const SkillTextsContainer = styled.ul`
   li {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     div {
       width: 180px;
       padding: 10px 15px;
       margin-top: 5px;
+
+      @media (min-width: 430px) {
+        width: 150px;
+      }
+
+      &.des {
+        width: 150px;
+
+        @media (min-width: 430px) {
+          width: 200px;
+        }
+      }
     }
     span {
       font-family: "Montserrat", sans-serif;
@@ -31,8 +44,15 @@ export const SkillTextsContainer = styled.ul`
     border: 1px solid var(--primary-color);
     background: var(--primary-color);
     display: inline-block;
-    width: 10px;
+    width: 14px;
     height: 10px;
     border-radius: 50%;
+    @media (min-width: 430px) {
+      width: 12px;
+    }
+
+    @media (min-width: 800px) {
+      width: 10px;
+    }
   }
 `;

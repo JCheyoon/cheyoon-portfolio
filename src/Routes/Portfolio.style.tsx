@@ -5,13 +5,13 @@ export const PortfolioContainer = styled.div`
   flex-direction: column;
   width: 800px;
   height: calc(100vh - 105px);
-  -webkit-overflow-scrolling: touch !important;
-  margin-bottom: 10px;
   align-items: center;
+  margin-bottom: -40px;
 
   @media (min-width: 520px) {
     align-items: normal;
     margin-top: 120px;
+    margin-bottom: 0;
   }
   @media (min-width: 800px) {
     padding: 20px 0;
