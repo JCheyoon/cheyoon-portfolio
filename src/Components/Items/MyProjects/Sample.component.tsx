@@ -1,10 +1,11 @@
 import ProjectHeader from "./Style/ProjectHeader.component";
 import ProjectsLink from "./Style/ProjectsLink.component";
 import ProjectFooter from "./Style/ProjectFooter.component";
+import { ProjectBox } from "./Style/ProjectStyle";
 
 const Sample = () => {
   return (
-    <>
+    <ProjectBox>
       <ProjectHeader
         title="Sample"
         tags={["Javascript", "Scss"]}
@@ -25,7 +26,7 @@ const Sample = () => {
         <li>Lorem ipsum dolor sit amet</li>
       </ul>
       <ProjectFooter siteLink="/" />
-    </>
+    </ProjectBox>
   );
 };
 export default Sample;

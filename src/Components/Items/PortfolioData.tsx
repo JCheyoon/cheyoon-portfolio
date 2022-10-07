@@ -1,5 +1,6 @@
 import Begopa from "./MyProjects/Begopa.component";
 import Sample from "./MyProjects/Sample.component";
+import Acnh from "./MyProjects/Acnh.component";
 
 export type ItemType = {
   id?: number;
@@ -20,9 +21,9 @@ export const portfolioItems: ItemType[] = [
   {
     id: 2,
     imgUrl: "../project2.png",
-    title: "javascript",
-    description: ["Javascript", "Scss"],
-    element: <Sample />,
+    title: "ACNH_v2",
+    description: ["React", "TypeScript", "MUI"],
+    element: <Acnh />,
   },
   {
     id: 3,

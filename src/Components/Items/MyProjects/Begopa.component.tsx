@@ -9,7 +9,7 @@ const Begopa = () => {
       <ProjectHeader
         title="Begopa"
         tags={["React", "Scss"]}
-        img="../project1.png"
+        img="https://storage.jcheyoon.com/begopa.gif"
       />
       <p>
         For my very first React project I choose to create a recipe website for
