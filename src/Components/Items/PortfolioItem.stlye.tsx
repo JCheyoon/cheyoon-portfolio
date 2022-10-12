@@ -25,7 +25,7 @@ export const Description = styled.div`
   top: 0;
   left: 0;
   backdrop-filter: blur(4px);
-  transform: translateY(140px);
+  transform: translateY(145px);
   transition: all ease-in 200ms;
 
   h1 {
@@ -33,16 +33,21 @@ export const Description = styled.div`
     border: none;
     margin: 5px;
   }
+`;
 
-  div {
-    display: flex;
-    flex-direction: row;
-    font-family: Monserrat sans-serif;
-    font-size: 18px;
-    margin-bottom: 10px;
+export const DescriptionTags = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  margin-bottom: 10px;
 
+  span {
+    background-color: var(--secondary-color);
+    margin: 3px;
     p {
-      margin: 3px;
+      margin: 0;
+      padding: 2px 4px;
     }
   }
 `;

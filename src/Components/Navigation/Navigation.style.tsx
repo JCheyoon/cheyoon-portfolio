@@ -83,7 +83,7 @@ export const MyNavLink = styled(NavLink)`
 
   span {
     margin-left: 7px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
   }
 
   &:hover {

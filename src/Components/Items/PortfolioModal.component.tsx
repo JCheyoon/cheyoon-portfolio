@@ -6,7 +6,7 @@ import {
 } from "./PortfolioModal.style";
 import { useContext } from "react";
 import { ModalContext } from "../../Context/modal-context";
-import { withCursor } from "../../Components/Cursor/withCursor";
+import { withCursor } from "../Cursor/withCursor";
 
 const ButtonWithCursor = withCursor(ModalBtn);
 

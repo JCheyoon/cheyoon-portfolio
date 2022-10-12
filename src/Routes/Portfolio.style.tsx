@@ -18,12 +18,40 @@ export const PortfolioContainer = styled.div`
     margin-top: 0;
   }
 
+  > div:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid var(--font-color-light);
+
+    @media (min-width: 420px) {
+      flex-direction: row;
+    }
+    @media (min-width: 800px) {
+      display: inline-block;
+    }
+  }
+  h1 {
+    font-size: 28px;
+    color: var(--font-color);
+    padding: 20px 10px;
+  }
+`;
+
+export const PortfolioTypeBtn = styled.button`
+  margin: 15px 5px;
+  background: none;
+  text-decoration: none;
+  border: 1px solid var(--font-color-light);
+  width: 200px;
+  cursor: pointer;
+
   h1 {
     font-size: 30px;
     color: var(--font-color);
-    border-bottom: 1px solid var(--font-color-light);
-    padding: 20px 10px;
-    margin-top: 30px;
+    padding: 5px 10px;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
   }
 `;
 
