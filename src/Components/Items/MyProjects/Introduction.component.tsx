@@ -1,5 +1,5 @@
 import ProjectHeader from "./Style/ProjectHeader.component";
-import { ProjectBox, ProjectUl } from "./Style/ProjectStyle";
+import { ProjectBox } from "./Style/ProjectStyle";
 
 const Introduction = () => {
   return (

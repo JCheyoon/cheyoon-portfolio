@@ -1,5 +1,4 @@
 import Begopa from "./MyProjects/Begopa.component";
-import Sample from "./MyProjects/Sample.component";
 import Acnh from "./MyProjects/Acnh.component";
 import PoketmonCard from "./MyProjects/PoketmonCard.component";
 import Introduction from "./MyProjects/Introduction.component";

@@ -21,6 +21,7 @@ const Contact = () => {
         <MapAndItemDiv>
           <MapDiv>
             <iframe
+              title="contactMap"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2266.0946461824797!2d19.07029971083121!3d47.512197932555125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc77375eba3f%3A0x741182668cd24071!2sBajza%20utca!5e0!3m2!1sko!2shu!4v1663758631507!5m2!1sko!2shu"
               style={{ border: 0 }}
               allowFullScreen={false}

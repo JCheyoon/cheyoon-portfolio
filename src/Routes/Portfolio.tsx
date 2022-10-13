@@ -1,4 +1,4 @@
-import { Button, PageContainer } from "../Page.style";
+import { PageContainer } from "../Page.style";
 import {
   PortfolioContainer,
   PortfolioGrid,
