@@ -1,4 +1,4 @@
-import { PageContainer } from "../Page.style";
+import { Button, PageContainer } from "../Page.style";
 import {
   PortfolioContainer,
   PortfolioGrid,
@@ -12,10 +12,12 @@ import {
 import PortfolioModal from "../Components/Items/PortfolioModal.component";
 import { useContext, useState } from "react";
 import { ModalContext } from "../Context/modal-context";
+import { withCursor } from "../Components/Cursor/withCursor";
 
 const Portfolio = () => {
   const modalCtx = useContext(ModalContext);
   const [portfolioTypeIsCode, setPortfolioTypeIsCode] = useState<boolean>(true);
+  const ButtonWithCursor = withCursor(PortfolioTypeBtn);
 
   return (
     <>
@@ -23,12 +25,12 @@ const Portfolio = () => {
       <PageContainer>
         <PortfolioContainer>
           <div>
-            <PortfolioTypeBtn onClick={() => setPortfolioTypeIsCode(true)}>
+            <ButtonWithCursor onClick={() => setPortfolioTypeIsCode(true)}>
               <h1>Code</h1>
-            </PortfolioTypeBtn>
-            <PortfolioTypeBtn onClick={() => setPortfolioTypeIsCode(false)}>
+            </ButtonWithCursor>
+            <ButtonWithCursor onClick={() => setPortfolioTypeIsCode(false)}>
               <h1>Design</h1>
-            </PortfolioTypeBtn>
+            </ButtonWithCursor>
           </div>
 
           <PortfolioGrid>

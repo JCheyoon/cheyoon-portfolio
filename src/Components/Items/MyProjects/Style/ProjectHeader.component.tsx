@@ -2,15 +2,24 @@ import {
   ProjectHeaderStyle,
   ProjectImage,
   ProjectTags,
+  ProjectVideo,
 } from "./ProjectHeader.style";
 
 interface headerPropsType {
   title: string;
   tags: string[];
   img: string;
+  requireVideo?: boolean;
+  video?: string;
 }
 
-const ProjectHeader = ({ title, tags, img }: headerPropsType) => {
+const ProjectHeader = ({
+  title,
+  tags,
+  img,
+  requireVideo = false,
+  video,
+}: headerPropsType) => {
   return (
     <>
       <ProjectHeaderStyle>{title}</ProjectHeaderStyle>
@@ -19,7 +28,13 @@ const ProjectHeader = ({ title, tags, img }: headerPropsType) => {
           <span key={index}>{tag}</span>
         ))}
       </ProjectTags>
-      <ProjectImage src={img} />
+      {requireVideo ? (
+        <ProjectVideo controls>
+          <source src={video} type="video/mp4" />
+        </ProjectVideo>
+      ) : (
+        <ProjectImage src={img} />
+      )}
     </>
   );
 };

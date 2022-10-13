@@ -32,3 +32,8 @@ export const ProjectImage = styled.img`
     height: 320px;
   }
 `;
+
+export const ProjectVideo = styled.video`
+  max-width: 90%;
+  display: block;
+`;
