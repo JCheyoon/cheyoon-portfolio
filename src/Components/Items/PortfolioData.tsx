@@ -8,6 +8,7 @@ import Doughnut from "./MyProjects/Doughnut.component";
 import ColaJelly from "./MyProjects/ColaJelly.component";
 import WolfDog from "./MyProjects/WolfDog.component";
 import ThisPortfolio from "./MyProjects/ThisPortfolio.component";
+import Three from "./MyProjects/Three.component";
 
 export type ItemType = {
   id?: number;
@@ -20,27 +21,34 @@ export type ItemType = {
 export const portfolioCodeItems: ItemType[] = [
   {
     id: 1,
+    imgUrl: "../project5.png",
+    title: "THREE",
+    description: ["React", "R3F", "Rapier"],
+    element: <Three />,
+  },
+  {
+    id: 2,
     imgUrl: "../project1.png",
     title: "Begopa",
     description: ["React", "Scss"],
     element: <Begopa />,
   },
   {
-    id: 2,
+    id: 3,
     imgUrl: "../project2.png",
     title: "ACNH_v2",
     description: ["React", "TypeScript", "MUI"],
     element: <Acnh />,
   },
   {
-    id: 3,
+    id: 4,
     imgUrl: "../project3.png",
     title: "Poketmon",
     description: ["React", "TypeScript", "Scss"],
     element: <PoketmonCard />,
   },
   {
-    id: 4,
+    id: 5,
     imgUrl: "../project4.png",
     title: "Portfolio",
     description: ["React", "TypeScript", "Scss"],
