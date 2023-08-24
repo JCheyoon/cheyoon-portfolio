@@ -23,7 +23,7 @@ export const portfolioCodeItems: ItemType[] = [
     id: 1,
     imgUrl: "../project5.png",
     title: "THREE",
-    description: ["React", "R3F", "Rapier"],
+    description: ["ReactThreeFiber", "Rapier", "Drei"],
     element: <Three />,
   },
   {

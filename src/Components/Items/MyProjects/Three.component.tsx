@@ -8,7 +8,7 @@ const Three = () => {
     <ProjectBox>
       <ProjectHeader
         title="THREE"
-        tags={["React", "ReactThreeFiber", "Rapier", "Drei", "Blender", "SCSS"]}
+        tags={["ReactThreeFiber", "Rapier", "Drei", "Blender"]}
         img="https://storage.jcheyoon.com/three.gif"
       />
       <p>My first R3F site.(ON GOING)</p>
