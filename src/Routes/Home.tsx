@@ -28,7 +28,7 @@ const Home = () => {
           </p>
           <p>
             I also got introduced to the world of IT and started to study about
-            software development. now I m ready for new challenges.
+            software development. now I am ready for new challenges.
           </p>
           <LinkWithCursor to="/about">
             <Button>About Me</Button>
