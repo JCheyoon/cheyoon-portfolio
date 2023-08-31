@@ -23,12 +23,12 @@ const Home = () => {
           </h1>
           <BorderBox />
           <p>
-            I majored Movie image design. I have worked as a graphic designer
-            for a year which I have learnt some knowledge of design tools.
+            I majored Movie Image Design and worked as a graphic designer for
+            almost 2 years, where I learned to use several design tools.
           </p>
           <p>
-            Currently, I am studying programming, and I m ready for new
-            challenges.
+            I also got introduced to the world of IT and started to study about
+            software development. I m ready for new challenges.
           </p>
           <LinkWithCursor to="/about">
             <Button>About Me</Button>
