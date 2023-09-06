@@ -11,7 +11,7 @@ const Three = () => {
         tags={["ReactThreeFiber", "Rapier", "Drei", "Blender"]}
         img="https://storage.jcheyoon.com/three.gif"
       />
-      <p>My first R3F site.(ON GOING)</p>
+      <p>My first R3F site.</p>
 
       <ProjectsLink siteLink="https://three.jcheyoon.com/" />
       <h3>Features:</h3>
