@@ -6,12 +6,13 @@ import {
 } from "./Home.style";
 import { Button, PageContainer } from "../Page.style";
 import { Link } from "react-router-dom";
-
 import { withCursor } from "../Components/Cursor/withCursor";
+import { useTranslation } from "react-i18next";
 
 const LinkWithCursor = withCursor(Link);
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <PageContainer>
       <HomeContainer>
@@ -22,14 +23,8 @@ const Home = () => {
             <span>JUNG</span>
           </h1>
           <BorderBox />
-          <p>
-            I majored Movie Image Design and worked as a graphic designer for
-            almost 2 years, where I learned to use several design tools.
-          </p>
-          <p>
-            I also got introduced to the world of IT and started to study about
-            software development. now I am ready for new challenges.
-          </p>
+          <p>{t("home.paragraph1")}</p>
+          <p>{t("home.paragraph2")}</p>
           <LinkWithCursor to="/about">
             <Button>About Me</Button>
           </LinkWithCursor>
