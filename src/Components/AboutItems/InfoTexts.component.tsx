@@ -1,8 +1,10 @@
 import { InfoTextContainer } from "./InfoTexts.style";
 import { ReactComponent as LinkedInIcon } from "../../Assets/LinkedIn.svg";
 import { ReactComponent as GithubInIcon } from "../../Assets/gitHub.svg";
+import { useTranslation } from "react-i18next";
 
 const InfoTexts = () => {
+  const { t } = useTranslation();
   return (
     <InfoTextContainer>
       <li>
@@ -15,7 +17,9 @@ const InfoTexts = () => {
         <span>
           <i className="material-icons">location_on</i>
         </span>
-        <span>Budapest, Hungary</span>
+        <span>
+          {t("location.city")},&nbsp;{t("location.country")}
+        </span>
       </li>
       <li>
         <span>

@@ -1,4 +1,23 @@
-{
-  "home.paragraph1": "테스트",
-  "home.paragraph2": "또 테스트"
+{"firstname": "",
+  "lastname": "정 채 윤",
+  "home.paragraph1": "안녕하세요. 그래픽디자인 전공 출신으로 2년의 디자이너 경험을 가지고 있으며, 현재는 IT 산업에 큰 관심을 두고 개발 공부를 하고 있습니다.",
+  "home.paragraph2": "디자인과 기술을 결합하여 창의적이고 혁신적인 결과물을 목표로 하고 있습니다.",
+  "aboutbtn": "자세히 보기",
+  "location.city":"부다페스트",
+  "location.country": "헝가리",
+  "downcv.btn": "이력서 다운",
+  "about.skill.header1": "보유",
+  "about.skill.header2": "기술",
+  "about.m.header1": "흥미있고",
+  "about.m.header2": "관심",
+  "about.m.header3": "있는 기술",
+  "about.other.header1": "기타",
+  "about.other.header2": "기술",
+  "skill.html": "Html 사용에 문제 없습니다.",
+  "skill.css": "Css 마법사가 되고 싶습니다",
+  "skill.scss": "Scss 를 좋아합니다",
+  "skill.js":"VanillaJS 를 잊지 않으려 노력하고 있습니다" ,
+  "skill.ts":  "막 배우기 시작했습니다!",
+  "skill.react": "깊게 파고들고 싶습니다",
+  "skill.threejs":"Three.js 에 흥미가 있습니다 "
 }

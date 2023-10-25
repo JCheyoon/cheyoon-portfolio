@@ -18,10 +18,12 @@ import { ReactComponent as PSSvg } from "../Assets/PS.svg";
 import { ReactComponent as C4DSvg } from "../Assets/C4D.svg";
 import { withCursor } from "../Components/Cursor/withCursor";
 import { skillList, wantToLearn } from "../Components/AboutItems/About";
+import { useTranslation } from "react-i18next";
 
 const ButtonWithCursor = withCursor(Button);
 
 const About = () => {
+  const { t } = useTranslation();
   const onDownload = () => {
     window.open("/JungCheyoon-CV.pdf", "_blank");
   };
@@ -32,22 +34,31 @@ const About = () => {
         <AboutContainer>
           <InfoContainer>
             <Pic />
-            <AboutHeader firstText="CHEYOON" secondText="JUNG" />
+            <AboutHeader
+              firstText={t("firstname")}
+              secondText={t("lastname")}
+            />
             <InfoTexts />
             <ButtonWithCursor onClick={onDownload}>
-              Download CV
+              {t("downcv.btn")}
             </ButtonWithCursor>
           </InfoContainer>
           <SkillContainer>
-            <AboutHeader firstText="Programming" secondText="skills" />
+            <AboutHeader
+              firstText={t("about.skill.header1")}
+              secondText={t("about.skill.header2")}
+            />
             <SkillTexts lists={skillList} />
             <AboutHeader
-              firstText="I would like to"
-              secondText="learn"
-              thirdText="in the future"
+              firstText={t("about.m.header1")}
+              secondText={t("about.m.header2")}
+              thirdText={t("about.m.header3")}
             />
             <SkillTexts lists={wantToLearn} />
-            <AboutHeader firstText="Other" secondText="skills" />
+            <AboutHeader
+              firstText={t("about.other.header1")}
+              secondText={t("about.other.header2")}
+            />
             <OtherSkills>
               <li>
                 <AESvg />

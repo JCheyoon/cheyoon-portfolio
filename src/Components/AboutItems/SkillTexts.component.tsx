@@ -1,7 +1,9 @@
 import { SkillTextsContainer } from "./SkilTexts.style";
 import { MySkills } from "./About";
+import { useTranslation } from "react-i18next";
 
 const SkillTexts = ({ lists }: { lists: MySkills[] }) => {
+  const { t } = useTranslation();
   return (
     <SkillTextsContainer>
       {lists.map((list) => (
@@ -10,7 +12,7 @@ const SkillTexts = ({ lists }: { lists: MySkills[] }) => {
             <span className="tech">{list.tech}</span>
           </div>
           <div className="des">
-            <span>{list.description}</span>
+            <span>{t(list.description)}</span>
           </div>
         </li>
       ))}

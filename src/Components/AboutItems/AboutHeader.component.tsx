@@ -1,5 +1,6 @@
 import React from "react";
 import { Mytext } from "./AboutHeader.style";
+import { useTranslation } from "react-i18next";
 
 interface TextType {
   firstText: string;

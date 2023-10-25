@@ -6,29 +6,29 @@ export type MySkills = {
 export const skillList: MySkills[] = [
   {
     tech: "Html",
-    description: "I am comfortable with using Html",
+    description: "skill.html",
   },
   {
     tech: "Css",
-    description: "I'd like to become css magician",
+    description: "skill.css",
   },
   {
     tech: "Scss",
-    description: "I love it",
+    description: "skill.scss",
   },
   {
     tech: "Javascript",
-    description: "I'm trying not to forget VanillaJS",
+    description: "skill.js",
   },
   {
     tech: "TypeScript",
-    description: "I just started to learn!",
+    description: "skill.ts",
   },
-  { tech: "React", description: "I'd like to dive deeper into React" },
+  { tech: "React", description: "skill.react" },
 ];
 export const wantToLearn: MySkills[] = [
   {
     tech: "Three.js",
-    description: " I am curios how Three.js is ",
+    description: "skill.threejs",
   },
 ];

@@ -19,14 +19,14 @@ const Home = () => {
         <PicContainer />
         <TextContainer>
           <h1>
-            <span className="firstName">CHEYOON</span>
-            <span>JUNG</span>
+            <span className="firstName">{t("firstname")}</span>
+            <span>{t("lastname")}</span>
           </h1>
           <BorderBox />
           <p>{t("home.paragraph1")}</p>
           <p>{t("home.paragraph2")}</p>
           <LinkWithCursor to="/about">
-            <Button>About Me</Button>
+            <Button>{t("aboutbtn")}</Button>
           </LinkWithCursor>
         </TextContainer>
       </HomeContainer>
