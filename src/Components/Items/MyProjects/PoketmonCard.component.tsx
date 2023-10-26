@@ -2,8 +2,11 @@ import ProjectHeader from "./Style/ProjectHeader.component";
 import ProjectsLink from "./Style/ProjectsLink.component";
 import ProjectFooter from "./Style/ProjectFooter.component";
 import { ProjectBox, ProjectUl } from "./Style/ProjectStyle";
+import ProjectFeatureHeader from "./Style/ProjectFeatureHeader";
+import { useTranslation } from "react-i18next";
 
 const PoketmonCard = () => {
+  const { t } = useTranslation();
   return (
     <ProjectBox>
       <ProjectHeader
@@ -11,24 +14,21 @@ const PoketmonCard = () => {
         tags={["React", "Scss", "TypeScript"]}
         img="https://storage.jcheyoon.com/poketmon-card.gif"
       />
-      <p>Memory game with React</p>
+      <p>{t("pokemon.header")}</p>
       <ProjectsLink siteLink="https://poketmon-card.jcheyoon.com/" />
-      <h3>Features:</h3>
+      <ProjectFeatureHeader />
       <ProjectUl>
         <li>
-          Local storage -<span>&nbsp;User can check their best score.</span>
+          {t("pokemon.feature.h1")} -
+          <span>&nbsp;{t("pokemon.feature.p1")}</span>
         </li>
         <li>
-          Game difficulty -
-          <span>
-            &nbsp;user can choose 3 different type of game difficulty.
-          </span>
+          {t("pokemon.feature.h2")} -
+          <span>&nbsp;{t("pokemon.feature.p2")}</span>
         </li>
         <li>
-          Responsive UI -
-          <span>
-            &nbsp;It's look fine on both desktops, tablets and mobile phones.
-          </span>
+          {t("pokemon.feature.h3")} -
+          <span>&nbsp;{t("pokemon.feature.p3")}</span>
         </li>
       </ProjectUl>
       <ProjectFooter siteLink="https://github.com/JCheyoon/poketmon-card-game" />

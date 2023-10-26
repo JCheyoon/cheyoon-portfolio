@@ -26,7 +26,7 @@ const Home = () => {
           <p>{t("home.paragraph1")}</p>
           <p>{t("home.paragraph2")}</p>
           <LinkWithCursor to="/about">
-            <Button>{t("aboutbtn")}</Button>
+            <Button>{t("about.btn")}</Button>
           </LinkWithCursor>
         </TextContainer>
       </HomeContainer>

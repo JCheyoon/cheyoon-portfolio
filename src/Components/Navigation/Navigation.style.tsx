@@ -67,6 +67,32 @@ export const DarkModeIcon = styled(DarkMode)`
   }
 `;
 
+export const LanguageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const LanguageBtn = styled.button`
+  background: none;
+  color: var(--font-color);
+  border: none;
+  font-family: "Poppins", "Noto Sans KR", sans-serif;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  &.selected {
+    color: var(--primary-color);
+  }
+  &:hover {
+    color: var(--secondary-color);
+  }
+`;
+
+export const LanguageBtnDivider = styled.span`
+  color: var(--font-color);
+`;
 export const MyNavLink = styled(NavLink)`
   padding: 5px 10px;
   cursor: pointer;

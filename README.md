@@ -1,6 +1,6 @@
 # Cheyoon portfolio site
 My new portfolio website made with React.
-
+> [>> Check it out here!](https://jcheyoon.com/)
 ### Features:
 
 - **Introduction + Portfolio -**

@@ -14,7 +14,7 @@ const resources: Resource = {
 };
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en-US", // initial language
+  lng: "en", // initial language
   fallbackLng: {
     "ko-KR": ["ko-KR"],
     default: ["en-US"],

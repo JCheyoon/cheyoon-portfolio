@@ -2,8 +2,11 @@ import { ProjectBox, ProjectUl } from "./Style/ProjectStyle";
 import ProjectHeader from "./Style/ProjectHeader.component";
 import ProjectsLink from "./Style/ProjectsLink.component";
 import ProjectFooter from "./Style/ProjectFooter.component";
+import ProjectFeatureHeader from "./Style/ProjectFeatureHeader";
+import { useTranslation } from "react-i18next";
 
 const ThisPortfolio = () => {
+  const { t } = useTranslation();
   return (
     <ProjectBox>
       <ProjectHeader
@@ -11,27 +14,18 @@ const ThisPortfolio = () => {
         tags={["React", "TypeScript", "Scss"]}
         img="../project4.png"
       />
-      <p>My new portfolio website made with React.</p>
-      <p>
-        You can check my old Portfolio site code that written in vanilla
-        javascript and see how I am improved!
-      </p>
+      <p>{t("thisPortfolio.header1")}</p>
+      <p>{t("thisPortfolio.header2")}</p>
       <ProjectsLink siteLink="https://github.com/JCheyoon/first_portfolio_site" />
-      <h3>Features:</h3>
+      <ProjectFeatureHeader />
       <ProjectUl>
         <li>
-          Introduction + Portfolio -
-          <span>
-            &nbsp;Visitors can read about me, my skills, also can check out my
-            developer portfolio..
-          </span>
+          {t("thisPortfolio.feature.h1")} -
+          <span>&nbsp;{t("thisPortfolio.feature.p1")}</span>
         </li>
         <li>
-          Dark and light themes -
-          <span>
-            &nbsp;Switching between the light and dark theme is possible without
-            any glitch thanks to the flexibility of CSS variables.
-          </span>
+          {t("thisPortfolio.feature.h2")} -
+          <span>&nbsp;{t("thisPortfolio.feature.h2")}</span>
         </li>
       </ProjectUl>
       <ProjectFooter siteLink="https://github.com/JCheyoon/cheyoon-portfolio" />

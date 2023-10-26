@@ -8,10 +8,12 @@ import { withCursor } from "../Cursor/withCursor";
 import { ItemType } from "./PortfolioData";
 import React, { useContext } from "react";
 import { ModalContext } from "../../Context/modal-context";
+import { useTranslation } from "react-i18next";
 
 const ButtonWithCursor = withCursor(Button);
 
 const PortfolioItem = ({ imgUrl, title, description, element }: ItemType) => {
+  const { t } = useTranslation();
   const { showModal } = useContext(ModalContext);
 
   return (
@@ -26,7 +28,7 @@ const PortfolioItem = ({ imgUrl, title, description, element }: ItemType) => {
           ))}
         </DescriptionTags>
         <ButtonWithCursor onClick={() => showModal(element ?? <div>x</div>)}>
-          Show more
+          {t("portfolio.btn")}
         </ButtonWithCursor>
       </Description>
     </ItemWrapper>

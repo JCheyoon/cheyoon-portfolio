@@ -2,8 +2,11 @@ import ProjectHeader from "./Style/ProjectHeader.component";
 import ProjectsLink from "./Style/ProjectsLink.component";
 import ProjectFooter from "./Style/ProjectFooter.component";
 import { ProjectBox, ProjectUl } from "./Style/ProjectStyle";
+import { useTranslation } from "react-i18next";
+import ProjectFeatureHeader from "./Style/ProjectFeatureHeader";
 
 const Three = () => {
+  const { t } = useTranslation();
   return (
     <ProjectBox>
       <ProjectHeader
@@ -11,16 +14,16 @@ const Three = () => {
         tags={["ReactThreeFiber", "Rapier", "Drei", "Blender"]}
         img="https://storage.jcheyoon.com/three.gif"
       />
-      <p>My first R3F site.</p>
+      <p>{t("three.header")}</p>
 
       <ProjectsLink siteLink="https://three.jcheyoon.com/" />
-      <h3>Features:</h3>
+      <ProjectFeatureHeader />
       <ProjectUl>
         <li>
-          Playable -<span>&nbsp;Visitors can move character.</span>
+          {t("three.feature.h1")} -<span>&nbsp;{t("three.feature.p1")}</span>
         </li>
         <li>
-          Physics -<span>&nbsp;Visitors can interact with some objects.</span>
+          {t("three.feature.h2")} -<span>&nbsp;{t("three.feature.p2")}</span>
         </li>
       </ProjectUl>
       <ProjectFooter siteLink="https://github.com/JCheyoon/firstThreejsPortfolio" />

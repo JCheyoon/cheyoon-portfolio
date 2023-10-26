@@ -6,6 +6,9 @@ import {
   EmptyDiv,
   DarkModeIcon,
   DarkModeBtn,
+  LanguageBtn,
+  LanguageBtnDivider,
+  LanguageContainer,
 } from "./Navigation.style";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -15,12 +18,17 @@ import { ReactComponent as LogoW } from "../../Assets/logo-w.svg";
 import { ReactComponent as LogoB } from "../../Assets/logo-b.svg";
 
 import { withCursor } from "../Cursor/withCursor";
+import { useTranslation } from "react-i18next";
 
 const NavLinkWithCursor = withCursor(MyNavLink);
 const LinkWithCursor = withCursor(Link);
 const DarkModeBtnWithCursor = withCursor(DarkModeBtn);
+const LanguageBtnWithCursor = withCursor(LanguageBtn);
+export const languages = ["en", "ko"];
+export type Language = "en" | "ko";
 
 const Navigation = () => {
+  const { t, i18n } = useTranslation();
   const isLargeScreen = useMediaQuery("(min-width: 700px)");
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
@@ -32,6 +40,10 @@ const Navigation = () => {
       document.querySelector("body")?.classList.remove("light");
       setIsDarkMode(true);
     }
+  };
+
+  const handleChangeLanguage = (lang: Language) => {
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -74,6 +86,19 @@ const Navigation = () => {
         <DarkModeBtnWithCursor onClick={changeColorMode}>
           <DarkModeIcon />
         </DarkModeBtnWithCursor>
+        {languages.map((lang, index) => (
+          <LanguageContainer key={lang}>
+            <LanguageBtnWithCursor
+              onClick={() => handleChangeLanguage(lang as Language)}
+              className={i18n.language === lang ? "selected" : ""}
+            >
+              {t(`${lang.toUpperCase()}`)}
+            </LanguageBtnWithCursor>
+            {index !== languages.length - 1 && (
+              <LanguageBtnDivider>|</LanguageBtnDivider>
+            )}
+          </LanguageContainer>
+        ))}
       </Navbar>
     </NavContainer>
   );
