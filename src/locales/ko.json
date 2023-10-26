@@ -43,7 +43,7 @@
   "acnh.feature.h2": "Rest API 통신",
   "acnh.feature.p2": "공개 API에서 아이템 및 주민 데이터를 가져올 수 있으며, 방문자는 거주민 및 즐겨찾는 주민을 저장 및 삭제할 수 있습니다.",
   "acnh.feature.h3": "태그 필터링과 검색",
-  "acnh.feature.p3": "방문자는 성격 태그로 주민을 필터링하거나 이름으로 주민과 아이템을 검색할 수 있어요.",
+  "acnh.feature.p3": "방문자는 성격 태그로 주민을 필터링하거나 이름으로 주민과 아이템을 검색할 수 있습니다.",
   "acnh.feature.h4": "Material-UI",
   "acnh.feature.p4": "MUI를 사용해서 CSS를 작성하지 않고 멋진 디자인과 사용하기 편리한 인터페이스를 만들었습니다.",
   "pokemon.feature.h1": "로컬 저장소",
