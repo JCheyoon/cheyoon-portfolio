@@ -17,7 +17,7 @@
   "skill.css": "Css 마법사가 되고 싶습니다",
   "skill.scss": "Scss 를 좋아합니다",
   "skill.js":"VanillaJS 를 잊지 않으려 노력하고 있습니다" ,
-  "skill.ts":  "막 배우기 시작했습니다!",
+  "skill.ts":  "자주 사용하러 노력중입니다.",
   "skill.react": "깊게 파고들고 싶습니다",
   "skill.threejs":"Three.js 에 흥미가 있습니다 ",
   "portfolio.btn":"더 보기",
@@ -57,5 +57,11 @@
   "thisPortfolio.feature.h1": "소개 및 포트폴리오",
   "thisPortfolio.feature.p1": "소개, 기술을 읽을 수 있으며 포트폴리오를 확인할 수 있습니다.",
   "thisPortfolio.feature.h2": "다크 모드와 라이트 모드",
-  "thisPortfolio.feature.p2": "CSS 변수의 유연성 덕분에 라이트 모드와 다크 모드 간에 원활하게 전환할 수 있습니다."
+  "thisPortfolio.feature.p2": "CSS 변수의 유연성 덕분에 라이트 모드와 다크 모드 간에 원활하게 전환할 수 있습니다.",
+  "RSPGame.header": "가위바위보 게임",
+  "RSPGame.feature.h1":"가위바위보 게임",
+  "RSPGame.feature.p1":"사용자는 일반적으로 가위, 바위 또는 보 중에서 선택하고 게임은 미리 정의된 규칙에 따라 승자를 결정합니다. (예: 바위는 가위를 이깁니다, 가위는 보를 이깁니다, 보는 바위를 이깁니다).",
+  "RSPGame.feature.h2":"로컬 스토리지",
+  "RSPGame.feature.p2":"각 게임 플레이마다 결과(이기기, 지기 또는 비기기)에 따라 점수를 업데이트할 수 있습니다"
+
 }

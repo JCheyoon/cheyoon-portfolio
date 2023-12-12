@@ -14,10 +14,10 @@ const resources: Resource = {
 };
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", // initial language
+  lng: "ko", // initial language
   fallbackLng: {
-    "ko-KR": ["ko-KR"],
-    default: ["en-US"],
+    "en-US": ["en"],
+    default: ["ko"],
   },
   debug: true,
   keySeparator: false,

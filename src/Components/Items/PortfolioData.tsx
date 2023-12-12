@@ -9,6 +9,7 @@ import ColaJelly from "./MyProjects/ColaJelly.component";
 import WolfDog from "./MyProjects/WolfDog.component";
 import ThisPortfolio from "./MyProjects/ThisPortfolio.component";
 import Three from "./MyProjects/Three.component";
+import RockPaperScissors from "./MyProjects/RockPaperScissors.component";
 
 export type ItemType = {
   id?: number;
@@ -49,6 +50,13 @@ export const portfolioCodeItems: ItemType[] = [
   },
   {
     id: 5,
+    imgUrl: "../project6.png",
+    title: "RSPGame",
+    description: ["React", "TypeScript", "Scss"],
+    element: <RockPaperScissors />,
+  },
+  {
+    id: 6,
     imgUrl: "../project4.png",
     title: "Portfolio",
     description: ["React", "TypeScript", "Scss"],

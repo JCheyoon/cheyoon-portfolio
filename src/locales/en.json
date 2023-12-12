@@ -17,7 +17,7 @@
   "skill.css": "I'd like to become css magician",
   "skill.scss": "I love it",
   "skill.js":"I'm trying not to forget VanillaJS" ,
-  "skill.ts":  "I just started to learn!",
+  "skill.ts":  "Exploring!",
   "skill.react": "I'd like to dive deeper into React",
   "skill.threejs":" I am curios how Three.js is ",
   "portfolio.btn":"Show more",
@@ -58,6 +58,10 @@
   "thisPortfolio.feature.h1": "Introduction + Portfolio",
   "thisPortfolio.feature.p1": "Visitors can read about me, my skills, also can check out my developer portfolio.",
   "thisPortfolio.feature.h2": "Dark and light themes",
-  "thisPortfolio.feature.p2": "Switching between the light and dark theme is possible without any glitch thanks to the flexibility of CSS variables."
-
+  "thisPortfolio.feature.p2": "Switching between the light and dark theme is possible without any glitch thanks to the flexibility of CSS variables.",
+  "RSPGame.header": "RockPaperScissors Game",
+  "RSPGame.feature.h1":"Game function",
+  "RSPGame.feature.p1":"the game determines the winner based on predefined rules (e.g., rock beats scissors, scissors beats paper, paper beats rock)",
+  "RSPGame.feature.h2":"Local Storage",
+  "RSPGame.feature.p2":"Each time a game is played, the score may be updated based on the outcome (win, lose, or tie)."
 }
