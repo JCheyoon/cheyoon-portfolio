@@ -42,16 +42,27 @@ export const PortfolioTypeBtn = styled.button`
   margin: 15px 5px;
   background: none;
   text-decoration: none;
-  border: 1px solid var(--font-color-light);
+  border: 1px solid var(--font-color-medium);
   width: 200px;
   cursor: pointer;
 
   h1 {
     font-size: 30px;
-    color: var(--font-color);
+    color: var(--font-color-light);
     padding: 5px 10px;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    transition: all 0.5s;
+  }
+  &:hover {
+    h1 {
+      color: var(--secondary-color);
+    }
+  }
+  &.active {
+    h1 {
+      color: var(--font-color);
+    }
   }
 `;
 
