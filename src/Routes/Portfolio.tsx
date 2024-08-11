@@ -25,10 +25,16 @@ const Portfolio = () => {
       <PageContainer>
         <PortfolioContainer>
           <div>
-            <ButtonWithCursor onClick={() => setPortfolioTypeIsCode(true)}>
+            <ButtonWithCursor
+              className={portfolioTypeIsCode ? "active" : ""}
+              onClick={() => setPortfolioTypeIsCode(true)}
+            >
               <h1>Code</h1>
             </ButtonWithCursor>
-            <ButtonWithCursor onClick={() => setPortfolioTypeIsCode(false)}>
+            <ButtonWithCursor
+              className={portfolioTypeIsCode ? "" : "active"}
+              onClick={() => setPortfolioTypeIsCode(false)}
+            >
               <h1>Design</h1>
             </ButtonWithCursor>
           </div>
