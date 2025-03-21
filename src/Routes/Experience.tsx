@@ -20,6 +20,9 @@ const Experience = () => {
             {t("experience.project.tech")}: React, Zustand, Typescript,
             Fabric.js,
           </li>
+          <li>
+            {t("experience.time.p1")}: 2 {t("experience.time.p2")}
+          </li>
         </ul>
         <hr />
         <h2>{t("experience.project.h2")}</h2>
@@ -30,6 +33,9 @@ const Experience = () => {
             {t("experience.project.tech")}: React, Typescript, RestAPI, Styled
             Components
           </li>
+          <li>
+            {t("experience.time.p1")}: 5 {t("experience.time.p2")}
+          </li>
         </ul>
         <hr />
         <h2>{t("experience.project.h3")}</h2>
@@ -39,6 +45,9 @@ const Experience = () => {
           <li>
             {t("experience.project.tech")}: React, Typescript, RestAPI, Styled
             Components, Echarts, Zustand
+          </li>
+          <li>
+            {t("experience.time.p1")}: 2 {t("experience.time.p2")}
           </li>
         </ul>
         <hr />

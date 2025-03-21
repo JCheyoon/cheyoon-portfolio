@@ -19,8 +19,9 @@ import { ReactComponent as C4DSvg } from "../Assets/C4D.svg";
 import { withCursor } from "../Components/Cursor/withCursor";
 import { skillList, wantToLearn } from "../Components/AboutItems/About";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
-const ButtonWithCursor = withCursor(Button);
+const LinkWithCursor = withCursor(Link);
 
 const About = () => {
   const { t } = useTranslation();
@@ -39,9 +40,9 @@ const About = () => {
               secondText={t("lastname")}
             />
             <InfoTexts />
-            <ButtonWithCursor onClick={onDownload}>
-              {t("downcv.btn")}
-            </ButtonWithCursor>
+            <LinkWithCursor to="/experience">
+              <Button>{t("gotoExperience.btn")}</Button>
+            </LinkWithCursor>
           </InfoContainer>
           <SkillContainer>
             <AboutHeader
