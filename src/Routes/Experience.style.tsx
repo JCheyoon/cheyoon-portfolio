@@ -14,16 +14,8 @@ export const ExpContainer = styled.div`
     color: var(--primary-color);
   }
 
-  img {
-    max-width: 100%;
-  }
-
   hr {
     border-color: var(--primary-color);
     margin: 1.5rem 0.5rem;
-  }
-
-  iframe {
-    max-width: 100%;
   }
 `;
