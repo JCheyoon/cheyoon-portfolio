@@ -64,9 +64,16 @@ const Navigation = () => {
         </NavLinkWithCursor>
         <NavLinkWithCursor to="/about">
           {isLargeScreen ? (
-            <span>About</span>
+            <span>About Me</span>
           ) : (
             <i className="material-icons">person_3</i>
+          )}
+        </NavLinkWithCursor>
+        <NavLinkWithCursor to="/experience">
+          {isLargeScreen ? (
+            <span>Experience</span>
+          ) : (
+            <i className="material-icons">call</i>
           )}
         </NavLinkWithCursor>
         <NavLinkWithCursor to="/portfolio">
@@ -74,13 +81,6 @@ const Navigation = () => {
             <span>Portfolio</span>
           ) : (
             <i className="material-icons">web_asset</i>
-          )}
-        </NavLinkWithCursor>
-        <NavLinkWithCursor to="/contact">
-          {isLargeScreen ? (
-            <span>Contact</span>
-          ) : (
-            <i className="material-icons">call</i>
           )}
         </NavLinkWithCursor>
         <DarkModeBtnWithCursor onClick={changeColorMode}>

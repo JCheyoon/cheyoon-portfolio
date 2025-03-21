@@ -1,8 +1,8 @@
 import i18n, { Resource } from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import en from "./en.json";
-import ko from "./ko.json";
+import en from "./locales/en.json";
+import ko from "./locales/ko.json";
 
 const resources: Resource = {
   en: {
@@ -14,7 +14,7 @@ const resources: Resource = {
 };
 i18n.use(initReactI18next).init({
   resources,
-  lng: "ko", // initial language
+  lng: "en", // initial language
   fallbackLng: {
     "en-US": ["en"],
     default: ["ko"],
