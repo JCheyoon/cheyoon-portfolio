@@ -25,9 +25,6 @@ const LinkWithCursor = withCursor(Link);
 
 const About = () => {
   const { t } = useTranslation();
-  const onDownload = () => {
-    window.open("/JungCheyoon-CV.pdf", "_blank");
-  };
 
   return (
     <PageContainer>
