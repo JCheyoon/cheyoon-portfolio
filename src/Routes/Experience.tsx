@@ -31,7 +31,7 @@ const Experience = () => {
         <ul>
           <li>
             {t("experience.project.tech")}: React, Typescript, RestAPI, Styled
-            Components
+            Components , Redux
           </li>
           <li>
             {t("experience.time.p1")}: 5 {t("experience.time.p2")}

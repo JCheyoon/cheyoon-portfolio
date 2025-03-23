@@ -13,9 +13,7 @@ import AboutHeader from "../Components/AboutItems/AboutHeader.component";
 
 import { ReactComponent as AISvg } from "../Assets/AI.svg";
 import { ReactComponent as AESvg } from "../Assets/AE.svg";
-import { ReactComponent as PRSvg } from "../Assets/PR.svg";
 import { ReactComponent as PSSvg } from "../Assets/PS.svg";
-import { ReactComponent as C4DSvg } from "../Assets/C4D.svg";
 import { withCursor } from "../Components/Cursor/withCursor";
 import { skillList, wantToLearn } from "../Components/AboutItems/About";
 import { useTranslation } from "react-i18next";
@@ -65,13 +63,7 @@ const About = () => {
                 <AISvg />
               </li>
               <li>
-                <PRSvg />
-              </li>
-              <li>
                 <PSSvg />
-              </li>
-              <li>
-                <C4DSvg />
               </li>
             </OtherSkills>
           </SkillContainer>
