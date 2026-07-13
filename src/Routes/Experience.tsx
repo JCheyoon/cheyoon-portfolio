@@ -11,6 +11,19 @@ const Experience = () => {
       <ExpContainer>
         <h1>{t("experience.header")}</h1>
         <p>{t("experience.subHeader")}:</p>
+        <h2>{t("experience.project.h4")}</h2>
+        <p>{t("experience.project.p4")}</p>
+        <p> {t("experience.project.review.p4")}</p>
+        <ul>
+          <li>
+            {t("experience.project.tech")}: React, Typescript, RestAPI, Material
+            UI,
+          </li>
+          <li>
+            {t("experience.time.p1")}: 1 {t("experience.time.p2.year")}
+          </li>
+        </ul>
+        <hr />
         <h2>{t("experience.project.h1")}</h2>
         <p>{t("experience.project.p1")}</p>
         <p>{t("experience.project.p1.sub")}</p>
