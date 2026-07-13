@@ -14,7 +14,7 @@ const resources: Resource = {
 };
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", // sshkey checking commit
+  lng: "en",
   fallbackLng: {
     "en-US": ["en"],
     default: ["ko"],
